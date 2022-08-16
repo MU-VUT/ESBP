@@ -1,0 +1,47 @@
+@use "sass:map";
+
+// Color variables
+
+$primaryColor: #a2f800;
+$primaryColorDark: #00cc00;
+$secondaryColor: #999999;
+$secondaryColorDark: #333333;
+$black: #000000;
+$white: #ffffff;
+
+// Font variables
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/src/font/ProximaNova-Regular.otf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(/src/font/OpenSans-Regular.ttf);
+}
+
+$fontPrimary: "Proxima Nova", "Open Sans", sans-serif;
+$fontSecondary: "Open Sans", sans-serif;
+
+// Media querries
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 1200px,
+);
+
+@mixin mq($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin mqmax($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}

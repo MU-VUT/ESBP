@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+.logo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 160px;
+  img {
+    height: 160px;
+  }
+}
+
+.logo-left {
+  justify-self: left;
+}
+
+.logo-right {
+  justify-self: right;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: $primaryColorDark;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  list-style: none;
+
+  li {
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    appearance: button;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    font-family: $fontPrimary;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: auto;
+    transition: 0.3s;
+    color: $white;
+
+    &:active,
+    &:hover {
+      background-color: $primaryColor;
+      color: $secondaryColorDark;
+    }
+  }
+}
+
+.hero-header {
+  height: 540px;
+  img {
+    max-height: 540px;
+    max-width: 1440px;
+  }
+}
+
+.alert-inner {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 160px;
+  background-color: $primaryColorDark;
+  color: $white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-family: $fontPrimary;
+  letter-spacing: 0.05em;
+  h3 {
+    font-size: 25px;
+  }
+}

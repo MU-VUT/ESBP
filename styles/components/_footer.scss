@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 75px;
+  text-align: center;
+
+  color: $white;
+  background-color: $secondaryColor;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    transition: 0.3s;
+
+    &:active,
+    &:hover {
+      color: $secondaryColorDark;
+    }
+  }
+}
