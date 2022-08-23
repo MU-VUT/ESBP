@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+.about-inner {
+  font-size: 18px;
+  p {
+    margin-top: 16px;
+  }
+  ul {
+    list-style: none;
+    line-height: 160%;
+    li::before {
+      content: "\25B0";
+      color: $primaryColorDark;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: 0em;
+    }
+  }
+}

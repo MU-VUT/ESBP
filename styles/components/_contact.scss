@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+.contact {
+  &-inner {
+    display: flex;
+  }
+
+  &-text {
+    flex: 1;
+
+    ul {
+      list-style: none;
+      margin-bottom: 1em;
+      line-height: 180%;
+    }
+  }
+
+  &-map {
+    flex: 1;
+    height: 406px;
+    iframe {
+      height: 360px;
+    }
+  }
+}

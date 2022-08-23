@@ -1,6 +1,11 @@
 @use "components/variables" as *;
 @use "components/header" as *;
 @use "components/footer" as *;
+@use "components/about" as *;
+@use "components/committees" as *;
+@use "components/venue" as *;
+@use "components/info" as *;
+@use "components/contact" as *;
 
 * {
   margin: 0;
@@ -90,4 +95,18 @@ body {
 
 .no-border {
   border: 0;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
