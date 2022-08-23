@@ -13,6 +13,7 @@
 
     <link rel="icon" type="image/x-icon" href="/res/icons/logo-dark.svg">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
@@ -21,7 +22,7 @@
     <div class="mother">
         <header>
             <h1 class="hidden">ESBP 2023</h1>
-            <div class="logo-row">
+            <div id="top" class="logo-row">
                 <div class="logo-left">
                     <img src="/src/img/Logotype-Green-Black.svg" alt="11th ESBP">
                 </div>
@@ -31,23 +32,24 @@
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Committees</a></li>
-                    <li><a href="">Program</a></li>
-                    <li><a href="">Venue</a></li>
-                    <li><a href="">Information</a></li>
-                    <li><a href="">Registration</a></li>
-                    <li><a href="">Sponsoring</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#committees">Committees</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#venue">Venue</a></li>
+                    <li><a href="#info">Information</a></li>
+                    <li><a href="#reg">Registration</a></li>
+                    <li><a href="#sponsor">Sponsoring</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- hero-header -->
+            <section class="hero-header">
+                <div class="hero-inner">
+                    <img src="/src/img/hero-header.png">
+                </div>
+            </section>
         </header>
-        <!-- hero-header -->
-        <section class="hero-header">
-            <div class="hero-inner">
-                <img src="/src/img/hero-header.png">
-            </div>
-        </section>
+
         <!-- Info-alert -->
         <section class="alert-box">
             <div class="alert-inner">
@@ -57,8 +59,19 @@
             </div>
         </section>
         <main>
+            <!-- To top -->
+            <div class="to-top">
+                <div class="to-top-1"></div>
+                <a href="#top">
+                    <div class="to-top-2">
+                        <div class="to-top-arrow">
+                            <img src="/src/img/angle-up-solid.svg">
+                        </div>
+                    </div>
+                </a>
+            </div>
             <!-- About -->
-            <section class="holder about">
+            <section id="about" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -112,7 +125,7 @@
 
             </section>
             <!-- Comittess -->
-            <section class="holder about">
+            <section id="committees" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -158,7 +171,7 @@
                 </div>
             </section>
             <!-- Program -->
-            <section class="holder about">
+            <section id="program" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -169,7 +182,7 @@
                 </div>
             </section>
             <!-- Venue -->
-            <section class="holder about">
+            <section id="venue" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -234,7 +247,7 @@
                 </div>
             </section>
             <!-- Info -->
-            <section class="holder about">
+            <section id="info" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -243,24 +256,39 @@
                 <div class="info-inner">
                     <div class="info-nav">
                         <ul>
-                            <li><a href="">How to get to Brno</a></li>
-                            <li><a href="">Accommodation</a></li>
+                            <li data-list="tab-1" class="active">How to get to Brno</li>
+                            <li data-list="tab-2">Accommodation</li>
                         </ul>
                     </div>
-                    <div class="info-text">
-                        <h3>How to get to Brno</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptas itaque
-                            voluptatum ducimus inventore optio enim rem quia molestiae distinctio sunt sed earum eaque
-                            at, error iusto, modi, commodi omnis.</p>
-                        <p>Harum, necessitatibus vel nobis pariatur facere, dolore quod beatae reprehenderit, sint
-                            cumque praesentium vitae corrupti voluptates deleniti! Voluptatem molestiae rem eligendi
-                            optio sapiente, laboriosam corporis possimus incidunt fugit voluptatibus iusto!</p>
+                    <div id="infoText" class="info-text">
+                        <div class="tab-content tab-1">
+                            <h3>How to get to Brno</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptas itaque
+                                voluptatum ducimus inventore optio enim rem quia molestiae distinctio sunt sed earum
+                                eaque
+                                at, error iusto, modi, commodi omnis.</p>
+                            <p>Harum, necessitatibus vel nobis pariatur facere, dolore quod beatae reprehenderit, sint
+                                cumque praesentium vitae corrupti voluptates deleniti! Voluptatem molestiae rem eligendi
+                                optio sapiente, laboriosam corporis possimus incidunt fugit voluptatibus iusto!</p>
+                        </div>
+                        <div class="tab-content tab-2">
+                            <h3>Accommodation</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, minus quos tempore
+                                quasi maxime expedita et sequi autem neque veritatis iure placeat voluptatum. Deleniti
+                                delectus sapiente alias deserunt magni mollitia!</p>
+                            <p>Architecto assumenda, inventore ipsum optio quia commodi aliquid consectetur cupiditate.
+                                Assumenda quia sit suscipit ipsa eaque similique alias provident ea porro distinctio
+                                doloremque, dicta facilis tempora qui molestiae dignissimos libero.</p>
+                            <p>Ea praesentium fugit nobis similique quaerat corporis exercitationem fugiat? Laudantium
+                                consequatur similique deleniti minus maiores, ipsa harum nisi natus iste voluptatibus
+                                rem a molestiae optio. Ratione laborum commodi ad itaque?</p>
+                        </div>
                     </div>
 
                 </div>
             </section>
             <!-- dates & registration -->
-            <section class="holder about">
+            <section id="reg" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -271,7 +299,7 @@
                 </div>
             </section>
             <!-- Sponsoring -->
-            <section class="holder about">
+            <section id="sponsor" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -282,7 +310,7 @@
                 </div>
             </section>
             <!-- Contact -->
-            <section class="holder about">
+            <section id="contact" class="holder about">
                 <div class="holder-header">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -315,8 +343,9 @@
         <footer>
             <p>Copyright © FCH VUT 2022 | <a href="https://www.vut.cz/en/cookies" target="_blank">Cookies Policy</a></p>
         </footer>
-    </div>
 
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

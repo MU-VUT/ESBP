@@ -16,16 +16,19 @@
 
     li {
       margin-bottom: calc(22px * 3);
-    }
-
-    a {
       text-decoration: none;
       color: black;
       transition: 0.3s;
       font-size: 22px;
+      transition: all 0.3s ease;
 
-      &:hover,
-      &:active {
+      &:hover {
+        cursor: pointer;
+        color: $primaryColorDark;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
+      &.active {
         color: $primaryColorDark;
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
       }

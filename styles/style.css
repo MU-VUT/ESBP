@@ -25,7 +25,14 @@
   justify-self: right;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
 .nav-list {
+  width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -212,14 +219,18 @@ footer a:active, footer a:hover {
 }
 .info-nav li {
   margin-bottom: 66px;
-}
-.info-nav a {
   text-decoration: none;
   color: black;
   transition: 0.3s;
   font-size: 22px;
+  transition: all 0.3s ease;
 }
-.info-nav a:hover, .info-nav a:active {
+.info-nav li:hover {
+  cursor: pointer;
+  color: #00cc00;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.info-nav li.active {
   color: #00cc00;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -249,6 +260,50 @@ footer a:active, footer a:hover {
   height: 360px;
 }
 
+.to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90vh;
+}
+.to-top-1 {
+  height: 60px;
+  width: 60px;
+  right: -80px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transform: skew(-15deg) scaleX(1.15);
+  background-color: #a2f800;
+  position: absolute;
+}
+.to-top-2 {
+  right: -80px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transform: skew(-5deg);
+  background-color: #00cc00;
+  position: absolute;
+  transition: 0.3s;
+}
+.to-top-2:hover {
+  box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.3);
+}
+.to-top-arrow {
+  height: 50px;
+  width: 50px;
+  transform: skew(5deg);
+  position: absolute;
+  transition: 0.3s;
+}
+.to-top-arrow:hover {
+  filter: invert(100%);
+}
+.to-top-arrow img {
+  position: absolute;
+  left: 7.5px;
+  top: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -274,6 +329,7 @@ body {
 }
 
 .holder {
+  scroll-margin-top: 100px;
   max-width: 1440px;
   margin: auto;
   justify-content: center;
@@ -347,4 +403,8 @@ h3 {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.fixed + .hero-header {
+  padding-top: 90px;
 }/*# sourceMappingURL=style.css.map */

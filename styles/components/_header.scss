@@ -18,7 +18,14 @@
   justify-self: right;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
 .nav-list {
+  width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

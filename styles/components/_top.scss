@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.to-top {
+  position: sticky;
+  top: 90vh;
+
+  &-1 {
+    height: 60px;
+    width: 60px;
+    right: -80px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transform: skew(-15deg) scaleX(1.15);
+    background-color: $primaryColor;
+    position: absolute;
+  }
+
+  &-2 {
+    right: -80px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transform: skew(-5deg);
+    background-color: $primaryColorDark;
+    position: absolute;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &-arrow {
+    height: 50px;
+    width: 50px;
+    transform: skew(5deg);
+    position: absolute;
+    transition: 0.3s;
+
+    &:hover {
+      filter: invert(100%);
+    }
+
+    img {
+      position: absolute;
+      left: 7.5px;
+      top: 5px;
+    }
+  }
+}
