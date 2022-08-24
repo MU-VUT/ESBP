@@ -5,6 +5,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &-2 {
+      @include mqmax(large) {
+        flex-direction: column-reverse;
+        overflow: hidden;
+      }
+    }
   }
 
   &-text {
@@ -15,6 +22,10 @@
 
     p {
       margin-bottom: 16px;
+
+      @include mqmax(large) {
+        font-size: 14px;
+      }
     }
 
     a {
@@ -35,22 +46,38 @@
     margin-right: 30px;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -30px;
-      right: -30px;
-      width: 660px;
-      height: 460px;
-      background-image: linear-gradient($primaryColorDark, white);
-      z-index: -10;
+
+    @include mqmax(small) {
+      height: 30vh !important;
+    }
+
+    @include mqmax(large) {
+      width: 100vw;
+      height: 60vh;
+      margin: 0;
+    }
+
+    @include mq(large) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        right: -30px;
+        width: 660px;
+        height: 460px;
+        background-image: linear-gradient($primaryColorDark, white);
+        z-index: -10;
+      }
     }
     &-1 {
       background-image: url("/src/img/feature-1.png");
     }
     &-2 {
       background-image: url("/src/img/feature-2.png");
-      margin-left: 30px;
+      @include mq(large) {
+        margin-left: 30px;
+      }
+
       &::before {
         transform: rotate(180deg);
       }

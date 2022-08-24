@@ -3,13 +3,22 @@
 .info {
   &-inner {
     display: flex;
+
+    @include mqmax(large) {
+      flex-direction: column;
+    }
   }
 
   &-nav {
-    flex: 1;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    margin-right: 30px;
+    @include mq(large) {
+      flex: 1;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      margin-right: 30px;
+    }
 
+    @include mqmax(large) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
     ul {
       list-style: none;
     }
@@ -21,6 +30,11 @@
       transition: 0.3s;
       font-size: 22px;
       transition: all 0.3s ease;
+
+      @include mqmax(large) {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
 
       &:hover {
         cursor: pointer;
@@ -40,6 +54,10 @@
 
     p {
       margin-bottom: 16px;
+
+      @include mqmax(large) {
+        font-size: 14px;
+      }
     }
   }
 }

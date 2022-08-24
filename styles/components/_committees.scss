@@ -4,12 +4,24 @@
   .two-col {
     display: flex;
     justify-content: space-between;
+
+    @include mqmax(large) {
+      flex-direction: column;
+    }
   }
   ul {
     font-size: 18px;
     margin-bottom: 32px;
     list-style: none;
     line-height: 160%;
+
+    @include mqmax(large) {
+      font-size: 14px;
+      &:first-child {
+        margin-bottom: 0px;
+      }
+    }
+
     li::before {
       content: "\25B0";
       color: $primaryColorDark;

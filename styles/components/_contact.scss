@@ -3,6 +3,10 @@
 .contact {
   &-inner {
     display: flex;
+
+    @include mqmax(large) {
+      flex-direction: column;
+    }
   }
 
   &-text {
@@ -12,14 +16,25 @@
       list-style: none;
       margin-bottom: 1em;
       line-height: 180%;
+      @include mqmax(large) {
+        font-size: 14px;
+      }
     }
   }
 
   &-map {
     flex: 1;
     height: 406px;
+    @include mqmax(large) {
+      height: 260px;
+    }
     iframe {
+      display: block;
       height: 360px;
+
+      @include mqmax(large) {
+        height: 260px;
+      }
     }
   }
 }

@@ -11,6 +11,11 @@ footer {
   color: $white;
   background-color: $secondaryColor;
 
+  @include mqmax(large) {
+    height: 50px;
+    font-size: 14px;
+  }
+
   a {
     text-decoration: none;
     color: $white;

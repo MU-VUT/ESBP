@@ -5,8 +5,16 @@
   flex-direction: row;
   justify-content: space-between;
   height: 160px;
+
+  @include mqmax(large) {
+    height: 60px;
+  }
+
   img {
     height: 160px;
+    @include mqmax(large) {
+      height: 60px;
+    }
   }
 }
 
@@ -16,12 +24,47 @@
 
 .logo-right {
   justify-self: right;
+
+  @include mqmax(large) {
+    position: absolute;
+    right: 60px;
+  }
+}
+
+.nav-icon-a {
+  appearance: button;
+  transition: 0.3s;
+  height: 60px;
+  width: 60px;
+  // margin: calc(60px / 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryColorDark;
+
+  &:active,
+  &:hover {
+    background-color: $primaryColor;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  @include mq(large) {
+    display: none;
+  }
+}
+
+.nav-icon {
+  height: 30px;
+  width: 30px;
 }
 
 .fixed {
-  position: fixed;
-  top: 0;
-  z-index: 100;
+  font-size: 16px;
+  @include mq(large) {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
 }
 
 .nav-list {
@@ -32,6 +75,10 @@
   background-color: $primaryColorDark;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   list-style: none;
+
+  @include mqmax(large) {
+    display: none;
+  }
 
   li {
     width: 100%;
@@ -64,11 +111,52 @@
   }
 }
 
+.responsive-nav-list {
+  display: block;
+  z-index: 80;
+  float: none;
+  text-align: left;
+  position: absolute;
+  width: 100vw;
+  padding: 0;
+  background-color: $primaryColor;
+  top: 60px;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+
+  li {
+    // margin-left: -0.5em;
+    a {
+      border-bottom: 1px solid $primaryColorDark;
+      font-size: 20px;
+      color: $secondaryColorDark;
+      height: 50px;
+    }
+  }
+}
+
 .hero-header {
   height: 540px;
+
+  @include mqmax(large) {
+    height: 100%;
+  }
+  .hero-inner {
+    @include mqmax(large) {
+      height: 100%;
+    }
+  }
+
   img {
+    display: block;
     max-height: 540px;
     max-width: 1440px;
+
+    @include mqmax(large) {
+      max-width: 100vw;
+    }
   }
 }
 
@@ -85,7 +173,18 @@
   text-transform: uppercase;
   font-family: $fontPrimary;
   letter-spacing: 0.05em;
+
+  @include mqmax(large) {
+    height: 100px;
+    max-width: 100vw;
+  }
+
   h3 {
     font-size: 25px;
+    margin: 15px;
+    @include mqmax(large) {
+      font-size: 18px;
+      margin: 5px;
+    }
   }
 }

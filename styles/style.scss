@@ -40,6 +40,11 @@ body {
   max-width: 1440px;
   margin: auto;
   justify-content: center;
+
+  @include mqmax(large) {
+    max-width: 95vw;
+  }
+
   &-sm {
     width: 90vw;
     margin: 5em auto;
@@ -56,6 +61,13 @@ body {
     height: 150px;
     width: 625px;
 
+    @include mqmax(large) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 80vw;
+      height: 100px;
+    }
+
     h2 {
       font-family: $fontPrimary;
       font-weight: 100;
@@ -64,6 +76,10 @@ body {
       text-transform: uppercase;
       color: $white;
       transform: skew(0);
+
+      @include mqmax(large) {
+        font-size: 20px;
+      }
     }
   }
   .rect1 {
@@ -74,6 +90,11 @@ body {
     transform: skew(-20deg) scaleX(1.045);
     background-color: $primaryColor;
     position: absolute;
+
+    @include mqmax(large) {
+      width: 80vw;
+      height: 100px;
+    }
   }
   .rect2 {
     height: 150px;
@@ -82,6 +103,11 @@ body {
     transform: skew(-10deg);
     background-color: $primaryColorDark;
     position: absolute;
+
+    @include mqmax(large) {
+      width: 80vw;
+      height: 100px;
+    }
   }
 }
 
@@ -103,6 +129,11 @@ h3 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 16px;
+
+  @include mqmax(large) {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
 }
 
 .mt-20 {
@@ -114,5 +145,7 @@ h3 {
 }
 
 .fixed + .hero-header {
-  padding-top: 90px;
+  @include mq(large) {
+    padding-top: 90px;
+  }
 }

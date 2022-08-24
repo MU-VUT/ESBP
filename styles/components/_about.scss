@@ -2,6 +2,11 @@
 
 .about-inner {
   font-size: 18px;
+
+  @include mqmax(large) {
+    font-size: 14px;
+  }
+
   p {
     margin-top: 16px;
   }

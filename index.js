@@ -15,7 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 //Info tabs
 $(document).ready(function () {
-  //Hide all tabs btu the first one
+  //Hide all tabs but the first one
   $(".info-text .tab-content").hide();
   $(".info-text .tab-content:first-child").show();
   $("#info ul li").click(function () {
@@ -42,4 +42,27 @@ $(window).bind("scroll", function () {
   }
 });
 
-//USE SCROLL WHEEL FOR THIS FIDDLE DEMO
+//Responsive nav
+$(window).resize(function () {
+  if (window.matchMedia("(max-width: 1440px)").matches) {
+    $("#navList").addClass("responsive-nav-list");
+    $("#navList").hide();
+  } else {
+    $("#navList").removeClass("responsive-nav-list");
+    $("#navList").show();
+  }
+});
+
+if (window.matchMedia("(max-width: 1440px)").matches) {
+  $("#navList").addClass("responsive-nav-list");
+  $("#navList").hide();
+} else {
+  $("#navList").removeClass("responsive-nav-list");
+  $("#navList").show();
+}
+
+$(document).ready(function () {
+  $("#navIcon").click(function () {
+    $("#navList").slideToggle("slow");
+  });
+});
