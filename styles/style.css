@@ -16,9 +16,11 @@
 @media screen and (max-width: 1440px) {
   .logo-row {
     height: 60px;
+    width: 100%;
   }
 }
 .logo-row img {
+  display: block;
   height: 160px;
 }
 @media screen and (max-width: 1440px) {
@@ -48,6 +50,8 @@
   transition: 0.3s;
   height: 60px;
   width: 60px;
+  position: absolute;
+  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +131,7 @@
   float: none;
   text-align: left;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   background-color: #a2f800;
   top: 60px;
@@ -167,7 +171,7 @@
 }
 @media screen and (max-width: 1440px) {
   .hero-header img {
-    max-width: 100vw;
+    max-width: 100%;
   }
 }
 
@@ -216,6 +220,7 @@ footer {
   footer {
     height: 50px;
     font-size: 14px;
+    width: 100%;
   }
 }
 footer a {
@@ -484,7 +489,7 @@ footer a:active, footer a:hover {
   .to-top-1 {
     height: 40px;
     width: 40px;
-    right: 15px;
+    right: 40px;
   }
 }
 .to-top-2 {
@@ -499,7 +504,7 @@ footer a:active, footer a:hover {
 }
 @media screen and (max-width: 1440px) {
   .to-top-2 {
-    right: 15px;
+    right: 40px;
     height: 40px;
     width: 40px;
   }
