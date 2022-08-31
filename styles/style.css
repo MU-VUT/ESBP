@@ -428,6 +428,36 @@ footer a:active, footer a:hover {
     font-size: 14px;
   }
 }
+.info-text ul {
+  font-size: 18px;
+  margin-bottom: 32px;
+  list-style: none;
+  line-height: 160%;
+}
+@media screen and (max-width: 1440px) {
+  .info-text ul {
+    font-size: 14px;
+  }
+  .info-text ul:first-child {
+    margin-bottom: 0px;
+  }
+}
+.info-text ul li::before {
+  content: "▰";
+  color: #00cc00;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: 0em;
+}
+.info-text a {
+  text-decoration: none;
+  color: #00cc00;
+  transition: 0.3s;
+}
+.info-text a:hover {
+  color: #333333;
+}
 
 .contact-inner {
   display: flex;
