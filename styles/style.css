@@ -567,6 +567,37 @@ footer a:active, footer a:hover {
   top: 5px;
 }
 
+.cc-nb-title {
+  font-family: "Proxima Nova", "Open Sans", sans-serif !important;
+}
+
+.cc-nb-text {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.cc-nb-okagree,
+.cc-nb-reject {
+  background-color: #00cc00 !important;
+  font-family: "Proxima Nova", "Open Sans", sans-serif !important;
+  transition: 0.3s !important;
+  color: #ffffff !important;
+}
+.cc-nb-okagree:active, .cc-nb-okagree:hover,
+.cc-nb-reject:active,
+.cc-nb-reject:hover {
+  background-color: #a2f800 !important;
+  color: #333333 !important;
+}
+
+.cc-nb-changep {
+  font-family: "Proxima Nova", "Open Sans", sans-serif !important;
+  transition: 0.3s !important;
+}
+.cc-nb-changep:active, .cc-nb-changep:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.cc-nb-title {
+  font-family: $fontPrimary !important;
+}
+
+.cc-nb-text {
+  font-family: $fontSecondary !important;
+}
+
+.cc-nb-okagree,
+.cc-nb-reject {
+  background-color: $primaryColorDark !important;
+  font-family: $fontPrimary !important;
+  transition: 0.3s !important;
+  color: $white !important;
+
+  &:active,
+  &:hover {
+    background-color: $primaryColor !important;
+    color: $secondaryColorDark !important;
+  }
+}
+
+.cc-nb-changep {
+  font-family: $fontPrimary !important;
+  transition: 0.3s !important;
+
+  &:active,
+  &:hover {
+    background-color: $secondaryColorDark !important;
+    color: $white !important;
+  }
+}
