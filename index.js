@@ -66,3 +66,35 @@ $(document).ready(function () {
     $("#navList").slideToggle("slow");
   });
 });
+
+//Automatic slideshow header
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = $(".hero-inner");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  progressBar();
+  setTimeout(showSlides, 10000);
+}
+
+//Progress bar
+function progressBar() {
+  $("#progressBar").animate(
+    {
+      width: "100%",
+    },
+    10000,
+    "linear",
+    function () {
+      $("#progressBar").width("0%");
+    }
+  );
+}
