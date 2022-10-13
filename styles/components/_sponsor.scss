@@ -1,0 +1,68 @@
+@use "variables" as *;
+
+.sponsor {
+  &-inner {
+    display: block !important;
+  }
+  &-grid {
+    display: flex;
+    @include mqmax(large) {
+      flex-direction: column;
+    }
+  }
+  &-item {
+    border: 2px solid $primaryColorDark;
+    flex: 1;
+    margin: 7px;
+    padding-bottom: 0px;
+    height: fit-content;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 22px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+    }
+    img {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      height: 165px;
+    }
+    h3 {
+      color: $primaryColorDark;
+      font-size: 36px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &-text {
+    background-color: #f0f0f0;
+    ul {
+      font-size: 18px;
+      line-height: 180%;
+      list-style: none;
+      margin: 10px 10px 0 10px;
+      padding-left: 0.65em;
+      text-indent: -0.65em;
+
+      li {
+        margin-left: 0.65em;
+      }
+
+      li::before {
+        content: "\2713";
+        color: $primaryColorDark;
+        font-weight: bold;
+        display: inline-block;
+        width: 0.65em;
+      }
+    }
+  }
+}

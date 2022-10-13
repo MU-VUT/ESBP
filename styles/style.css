@@ -637,6 +637,70 @@ footer a:active, footer a:hover {
   color: #ffffff !important;
 }
 
+.sponsor-inner {
+  display: block !important;
+}
+.sponsor-grid {
+  display: flex;
+}
+@media screen and (max-width: 1440px) {
+  .sponsor-grid {
+    flex-direction: column;
+  }
+}
+.sponsor-item {
+  border: 2px solid #00cc00;
+  flex: 1;
+  margin: 7px;
+  padding-bottom: 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.sponsor-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sponsor-header h2 {
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.sponsor-header img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 165px;
+}
+.sponsor-header h3 {
+  color: #00cc00;
+  font-size: 36px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.sponsor-text {
+  background-color: #f0f0f0;
+}
+.sponsor-text ul {
+  font-size: 18px;
+  line-height: 180%;
+  list-style: none;
+  margin: 10px 10px 0 10px;
+  padding-left: 0.65em;
+  text-indent: -0.65em;
+}
+.sponsor-text ul li {
+  margin-left: 0.65em;
+}
+.sponsor-text ul li::before {
+  content: "✓";
+  color: #00cc00;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.65em;
+}
+
 * {
   margin: 0;
   padding: 0;

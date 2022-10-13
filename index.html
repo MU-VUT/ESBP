@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESBP 2023</title>
 
-    <meta name="description" content="ESBP" />
-    <meta name="keywords" content="ESBP" />
-    <meta name="author" content="Michal Urbánek" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESBP 2023</title>
 
-    <link rel="icon" type="image/x-icon" href="/src/img/transparent.png" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      function reloadPage() {
-        location.reload(true);
-      }
-    </script>
-    <!-- Google Tag Manager -->
-    <script type="text/plain" cookie-consent="tracking">
+  <meta name="description" content="ESBP" />
+  <meta name="keywords" content="ESBP" />
+  <meta name="author" content="Michal Urbánek" />
+
+  <link rel="icon" type="image/x-icon" href="/src/img/transparent.png" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function reloadPage() {
+      location.reload(true);
+    }
+  </script>
+  <!-- Google Tag Manager -->
+  <script type="text/plain" cookie-consent="tracking">
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -31,486 +32,519 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-K84MWGM");
     </script>
-    <!-- End Google Tag Manager -->
-  </head>
+  <!-- End Google Tag Manager -->
+</head>
 
-  <body>
-    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-    <script
-      type="text/javascript"
-      src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js"
-      charset="UTF-8"
-    ></script>
-    <script type="text/javascript" charset="UTF-8">
-      document.addEventListener("DOMContentLoaded", function () {
-        cookieconsent.run({
-          notice_banner_type: "simple",
-          consent_type: "express",
-          palette: "light",
-          language: "en",
-          page_load_consent_levels: ["strictly-necessary"],
-          notice_banner_reject_button_hide: false,
-          preferences_center_close_button_hide: false,
-          page_refresh_confirmation_buttons: false,
-          website_name: "ESBP 2023",
-          website_privacy_policy_url: "https://www.vut.cz/en/cookies",
-        });
+<body>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js"
+    charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener("DOMContentLoaded", function () {
+      cookieconsent.run({
+        notice_banner_type: "simple",
+        consent_type: "express",
+        palette: "light",
+        language: "en",
+        page_load_consent_levels: ["strictly-necessary"],
+        notice_banner_reject_button_hide: false,
+        preferences_center_close_button_hide: false,
+        page_refresh_confirmation_buttons: false,
+        website_name: "ESBP 2023",
+        website_privacy_policy_url: "https://www.vut.cz/en/cookies",
       });
-    </script>
+    });
+  </script>
 
-    <noscript
-      >Free cookie consent management tool by
-      <a href="https://www.termsfeed.com/" rel="nofollow noopener"
-        >TermsFeed Policy Generator</a
-      ></noscript
-    >
-    <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-K84MWGM"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Logo + navigace -->
-    <div class="mother">
-      <header>
-        <h1 class="hidden">ESBP 2023</h1>
-        <div id="top" class="logo-row">
-          <div class="logo-left">
-            <img src="/src/img/Logotype-Green-Black.svg" alt="11th ESBP" />
-          </div>
-          <div class="logo-right">
-            <img
-              src="/src/img/date-banner.png"
-              alt="13th - 15th September 2023"
-            />
-          </div>
-          <a id="navIcon" class="nav-icon-a">
-            <img class="nav-icon" src="/src/img/bars-solid.svg" alt="" />
-          </a>
+  <noscript>Free cookie consent management tool by
+    <a href="https://www.termsfeed.com/" rel="nofollow noopener">TermsFeed Policy Generator</a></noscript>
+  <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K84MWGM" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Logo + navigace -->
+  <div class="mother">
+    <header>
+      <h1 class="hidden">ESBP 2023</h1>
+      <div id="top" class="logo-row">
+        <div class="logo-left">
+          <img src="/src/img/Logotype-Green-Black.svg" alt="11th ESBP" />
         </div>
-        <nav>
-          <ul id="navList" class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#committees">Committees</a></li>
-            <li><a href="#program">Program</a></li>
-            <li><a href="#venue">Venue</a></li>
-            <li><a href="#info">Information</a></li>
-            <li><a href="#reg">Registration</a></li>
-            <li><a href="#sponsor">Sponsoring</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- hero-header -->
-        <section class="hero-header">
-          <div id="progress">
-            <div id="progressBar"></div>
-          </div>
-          <div class="hero-inner fade">
-            <img src="/src/img/hero-header-1.png" />
-          </div>
-          <div class="hero-inner fade">
-            <img src="/src/img/hero-header-2.png" />
-          </div>
-          <div class="hero-inner fade">
-            <img src="/src/img/hero-header-3.png" />
-          </div>
-          <div class="hero-inner fade">
-            <img src="/src/img/hero-header-4.png" />
-          </div>
-          <div class="hero-inner fade">
-            <img src="/src/img/hero-header-5.png" />
-          </div>
-        </section>
-      </header>
-
-      <!-- Info-alert -->
-      <section class="alert-box">
-        <div class="alert-inner">
-          <h3>Latest news & info can be found here!</h3>
+        <div class="logo-right">
+          <img src="/src/img/date-banner.png" alt="13th - 15th September 2023" />
+        </div>
+        <a id="navIcon" class="nav-icon-a">
+          <img class="nav-icon" src="/src/img/bars-solid.svg" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul id="navList" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#committees">Committees</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#info">Information</a></li>
+          <li><a href="#reg">Registration</a></li>
+          <li><a href="#sponsor">Sponsoring</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- hero-header -->
+      <section class="hero-header">
+        <div id="progress">
+          <div id="progressBar"></div>
+        </div>
+        <div class="hero-inner fade">
+          <img src="/src/img/hero-header-1.png" />
+        </div>
+        <div class="hero-inner fade">
+          <img src="/src/img/hero-header-2.png" />
+        </div>
+        <div class="hero-inner fade">
+          <img src="/src/img/hero-header-3.png" />
+        </div>
+        <div class="hero-inner fade">
+          <img src="/src/img/hero-header-4.png" />
+        </div>
+        <div class="hero-inner fade">
+          <img src="/src/img/hero-header-5.png" />
         </div>
       </section>
-      <main>
-        <!-- To top -->
-        <div class="to-top">
-          <div class="to-top-1"></div>
-          <a href="#top">
-            <div class="to-top-2">
-              <div class="to-top-arrow">
-                <img src="/src/img/angle-up-solid.svg" />
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- About -->
-        <section id="about" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>About conference</h2>
-          </div>
-          <div class="about-inner">
-            <p>
-              European Symposium on Biopolymer (ESBP) is a traditional and
-              successful series of symposia dedicated to all the aspects of
-              biopolymers – an outstanding category of materials that includes
-              polyesters, polysaccharides, polyamides, polyphosphates but also
-              other polymeric materials of natural origin. The ambition of the
-              series is to gather experts from very versatile fields such as
-              molecular biology or biotechnology but also from material science
-              and processing to share their knowledge, experience, and also
-              opinions on all the aspects related to biopolymers and drive the
-              field of biopolymer science further. In addition, the ambition of
-              the conference is also to provide a platform to bring closer
-              academy and industry.
-            </p>
-            <p>
-              The symposium series was launched in 2000 in Münster. So far, the
-              last event within the series- the 10th ESBP was held in Straubing
-              in 2019. After that, the regular interval between the symposia was
-              ruined by the COVID pandemic. However, now it is pleasure for us
-              to inform you that 11th ESBP will be organized from 13th-15th
-              Sepmerber 2023 in Brno, the Czech Republic by the Faculty of
-              Chemistry, Brno University of Technology.
-            </p>
-            <p><b>The main topics</b> of the conference will include:</p>
-            <ul>
-              <li>Production, isolation, and purification of biopolymers</li>
-              <li>Processing and characterization of biopolymers</li>
-              <li>Biopolymers for medicine and tissue engineering</li>
-              <li>Biopolymers in high-value and technical applications</li>
-              <li>
-                Synthetic biology for biopolymer engineering and production
-              </li>
-              <li>
-                Biodegradation, ecology, biology and environmental impact of
-                biopolymers
-              </li>
-            </ul>
+    </header>
 
-            <p>
-              So, if you are, for any reason, interested in biopolymers and if
-              you would like to meet experts in this exciting field of science
-              and technology, we are looking forward to hosting you in Brno in
-              September 2023.
-            </p>
-            <p>On behalf of the organization committee</p>
-            <p>Stanislav Obruča</p>
-          </div>
-        </section>
-        <!-- Comittess -->
-        <section id="committees" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Committees</h2>
-          </div>
-          <div class="committees-inner">
-            <h3>Scientific committee</h3>
-            <div class="two-col">
-              <ul>
-                <li>Luc Averous, Université de Strasbourg, France</li>
-                <li>Ivan CHODAK, Slovak Academy of Science, Slovaky</li>
-                <li>Vasif HASIRCI, METU, Turkey</li>
-                <li>Dieter JENDROSSEK, University of Stuttgart, Germany</li>
-                <li>Martin KOLLER, University of Graz, Austria</li>
-                <li>Valérie LANGLOIS, Université Paris Est, CNRS, France</li>
-                <li>Jose LARAGON, Iata-SCIC, Spain</li>
-                <li>Berit LØKENSGARD STRAND, NTNU Trondheim, Norway</li>
-                <li>Kevin O’CONNOR, UCD, Ireland</li>
-                <li>Etienne PAUL, Université de Toulouse, France</li>
-                <li>Auxiliadora PRIETO, CIB-CSIC, Spain</li>
-              </ul>
-              <ul>
-                <li>
-                  Maria Manuela REGALO DA FONSECA, Universidade Técnica de
-                  Lisboa, Portugal
-                </li>
-                <li>Maria REIS, FCT-UNL, Portugal</li>
-                <li>Ipsita Roy, The University of Sheffield</li>
-                <li>Jochen SCHMID, University of Münster, Germany</li>
-                <li>
-                  Volker SIEBER, Technical University of Munich Campus
-                  Straubing, Germany
-                </li>
-                <li>Alexander STEINBÜCHEL, University of Lodz, Poland</li>
-                <li>Ebru TOKSOY ÖNER, Marmara University, Istanbul, Turkey</li>
-                <li>Alan WERKER, Promiko, Lomma, Sweden</li>
-                <li>Manfred ZINN, HES-SO, Switzerland</li>
-                <li>
-                  Stanislav OBRUČA, Brno University of Technology, Czech
-                  Republic
-                </li>
-              </ul>
+    <!-- Info-alert -->
+    <section class="alert-box">
+      <div class="alert-inner">
+        <h3>Latest news & info can be found here!</h3>
+      </div>
+    </section>
+    <main>
+      <!-- To top -->
+      <div class="to-top">
+        <div class="to-top-1"></div>
+        <a href="#top">
+          <div class="to-top-2">
+            <div class="to-top-arrow">
+              <img src="/src/img/angle-up-solid.svg" />
             </div>
-            <h3>Organization committee</h3>
+          </div>
+        </a>
+      </div>
+      <!-- About -->
+      <section id="about" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>About conference</h2>
+        </div>
+        <div class="about-inner">
+          <p>
+            European Symposium on Biopolymer (ESBP) is a traditional and
+            successful series of symposia dedicated to all the aspects of
+            biopolymers – an outstanding category of materials that includes
+            polyesters, polysaccharides, polyamides, polyphosphates but also
+            other polymeric materials of natural origin. The ambition of the
+            series is to gather experts from very versatile fields such as
+            molecular biology or biotechnology but also from material science
+            and processing to share their knowledge, experience, and also
+            opinions on all the aspects related to biopolymers and drive the
+            field of biopolymer science further. In addition, the ambition of
+            the conference is also to provide a platform to bring closer
+            academy and industry.
+          </p>
+          <p>
+            The symposium series was launched in 2000 in Münster. So far, the
+            last event within the series- the 10th ESBP was held in Straubing
+            in 2019. After that, the regular interval between the symposia was
+            ruined by the COVID pandemic. However, now it is pleasure for us
+            to inform you that 11th ESBP will be organized from 13th-15th
+            Sepmerber 2023 in Brno, the Czech Republic by the Faculty of
+            Chemistry, Brno University of Technology.
+          </p>
+          <p><b>The main topics</b> of the conference will include:</p>
+          <ul>
+            <li>Production, isolation, and purification of biopolymers</li>
+            <li>Processing and characterization of biopolymers</li>
+            <li>Biopolymers for medicine and tissue engineering</li>
+            <li>Biopolymers in high-value and technical applications</li>
+            <li>
+              Synthetic biology for biopolymer engineering and production
+            </li>
+            <li>
+              Biodegradation, ecology, biology and environmental impact of
+              biopolymers
+            </li>
+          </ul>
+
+          <p>
+            So, if you are, for any reason, interested in biopolymers and if
+            you would like to meet experts in this exciting field of science
+            and technology, we are looking forward to hosting you in Brno in
+            September 2023.
+          </p>
+          <p>On behalf of the organization committee</p>
+          <p>Stanislav Obruča</p>
+        </div>
+      </section>
+      <!-- Comittess -->
+      <section id="committees" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Committees</h2>
+        </div>
+        <div class="committees-inner">
+          <h3>Scientific committee</h3>
+          <div class="two-col">
+            <ul>
+              <li>Luc Averous, Université de Strasbourg, France</li>
+              <li>Ivan CHODAK, Slovak Academy of Science, Slovaky</li>
+              <li>Vasif HASIRCI, METU, Turkey</li>
+              <li>Dieter JENDROSSEK, University of Stuttgart, Germany</li>
+              <li>Martin KOLLER, University of Graz, Austria</li>
+              <li>Valérie LANGLOIS, Université Paris Est, CNRS, France</li>
+              <li>Jose LARAGON, Iata-SCIC, Spain</li>
+              <li>Berit LØKENSGARD STRAND, NTNU Trondheim, Norway</li>
+              <li>Kevin O’CONNOR, UCD, Ireland</li>
+              <li>Etienne PAUL, Université de Toulouse, France</li>
+              <li>Auxiliadora PRIETO, CIB-CSIC, Spain</li>
+            </ul>
             <ul>
               <li>
-                Stanislav OBRUČA, Brno University of Technology, Czech Republic,
-                obruca@fch.vut.cz
+                Maria Manuela REGALO DA FONSECA, Universidade Técnica de
+                Lisboa, Portugal
               </li>
+              <li>Maria REIS, FCT-UNL, Portugal</li>
+              <li>Ipsita Roy, The University of Sheffield</li>
+              <li>Jochen SCHMID, University of Münster, Germany</li>
               <li>
-                Petr SEDLÁČEK, Brno University of Technology, Czech Republic,
-                sedlacek-p@fch.vut.cz
+                Volker SIEBER, Technical University of Munich Campus
+                Straubing, Germany
               </li>
+              <li>Alexander STEINBÜCHEL, University of Lodz, Poland</li>
+              <li>Ebru TOKSOY ÖNER, Marmara University, Istanbul, Turkey</li>
+              <li>Alan WERKER, Promiko, Lomma, Sweden</li>
+              <li>Manfred ZINN, HES-SO, Switzerland</li>
               <li>
-                Eva SLANINOVÁ, Brno University of Technology, Czech Republic,
-                xcslaninovae@fch.vut.cz
-              </li>
-              <li>
-                Hana ALEXOVÁ, Brno University of Technology, Czech Republic
-              </li>
-              <li>
-                Tomáš OPRAVIL, Brno University of Technology, Czech Republic
+                Stanislav OBRUČA, Brno University of Technology, Czech
+                Republic
               </li>
             </ul>
           </div>
-        </section>
-        <!-- Program -->
-        <section id="program" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Scientific&nbsp;& social program</h2>
+          <h3>Organization committee</h3>
+          <ul>
+            <li>
+              Stanislav OBRUČA, Brno University of Technology, Czech Republic,
+              obruca@fch.vut.cz
+            </li>
+            <li>
+              Petr SEDLÁČEK, Brno University of Technology, Czech Republic,
+              sedlacek-p@fch.vut.cz
+            </li>
+            <li>
+              Eva SLANINOVÁ, Brno University of Technology, Czech Republic,
+              xcslaninovae@fch.vut.cz
+            </li>
+            <li>
+              Hana ALEXOVÁ, Brno University of Technology, Czech Republic
+            </li>
+            <li>
+              Tomáš OPRAVIL, Brno University of Technology, Czech Republic
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Program -->
+      <section id="program" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Scientific&nbsp;& social program</h2>
+        </div>
+        <div class="program-inner">
+          <h3 style="text-align: center">To be announced</h3>
+        </div>
+      </section>
+      <!-- Venue -->
+      <section id="venue" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Venue&nbsp;& Brno</h2>
+        </div>
+        <div class="venue-inner">
+          <div class="venue-text">
+            <h3>Brno – City of Science and Technology</h3>
+            <p>
+              Brno is a city in the South Moravian Region of the Czech
+              Republic. Located at the confluence of the Svitava and Svratka
+              rivers, Brno has about 380,000 inhabitants, making it the
+              second-largest city in the Czech Republic after the capital,
+              Prague.
+            </p>
+            <p>
+              One of the unique features of Brno is its good accessibility
+              since it is positioned 2 h of driving from 4 capital cities –
+              Prague, Vienna, Bratislava and Budapest.
+            </p>
+            <p>
+              The second reason which makes Brno a very suitable city to host
+              11th ESBP is the fact that Brno has evolved into an important
+              university city with numerous scientific institutions and
+              research centers and a very strong scientific background and
+              infrastructure. Furthermore, numerous industrial and
+              technological companies active in the field of research and
+              development are located in Brno as well. Actually, Brno
+              resonates with science and technology!
+            </p>
+            <p>
+              Further, Brno has a rich history, a beautiful historical center,
+              hundreds of historical sights and other places which are worth
+              seeing and visiting. Brno is also famous due to its young spirit
+              and numerous excellent restaurants, bars, and pubs.
+            </p>
+            <p>
+              To sum up, we do believe that Brno is an excellent place to
+              organize a scientific congress!
+            </p>
+            <p>
+              For more information about Brno, you can visit the following
+              links:
+              <br />
+              <a href="https://en.brno.cz/ " target="_blank">https://en.brno.cz/</a>&emsp;<a href="https://www.gotobrno.cz/en/
+                            " target="_blank">https://www.gotobrno.cz/en/
+              </a>
+            </p>
           </div>
-          <div class="program-inner">
-            <h3 style="text-align: center">To be announced</h3>
+          <div class="venue-image venue-image-1"></div>
+        </div>
+        <div class="venue-inner venue-inner-2 mt-20 mb-30">
+          <div class="venue-image venue-image-2"></div>
+          <div class="venue-text">
+            <h3>Venue</h3>
+            <p>
+              Brno Observatory and Planetarium is not only an exciting place
+              that you should definitely visit if you are interested in the
+              universe, but it is also an ideal and unique venue for the
+              organization of medium size conferences and symposia such as
+              11th ESBP. This fascinating place can provide us with all we
+              need and even more. We will use the digital planetarium as the
+              main conference hall, but also other meeting rooms for parallel
+              sessions or workshops are available. Further, the looby will
+              serve as a place for poster sessions, coffee breaks, and also
+              relaxing or even working area. Brno Observatory and Planetarium
+              is located on the hill and it also grants the visitors
+              fascinating views of Brno City and its surroundings.
+            </p>
+            <p>
+              For more information about the Brno Observatory and Planetarium,
+              you can use the following link:
+              <a href="https://www.hvezdarna.cz/en/about-us/" target="_blank">https://www.hvezdarna.cz/en/about-us/
+              </a>
+            </p>
           </div>
-        </section>
-        <!-- Venue -->
-        <section id="venue" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Venue&nbsp;& Brno</h2>
+        </div>
+      </section>
+      <!-- Info -->
+      <section id="info" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Information&nbsp;for participants</h2>
+        </div>
+        <div class="info-inner">
+          <div class="info-nav">
+            <ul>
+              <li data-list="tab-1" class="active">About Brno</li>
+              <li data-list="tab-2">Accommodation</li>
+            </ul>
           </div>
-          <div class="venue-inner">
-            <div class="venue-text">
-              <h3>Brno – City of Science and Technology</h3>
-              <p>
-                Brno is a city in the South Moravian Region of the Czech
-                Republic. Located at the confluence of the Svitava and Svratka
-                rivers, Brno has about 380,000 inhabitants, making it the
-                second-largest city in the Czech Republic after the capital,
-                Prague.
-              </p>
-              <p>
-                One of the unique features of Brno is its good accessibility
-                since it is positioned 2 h of driving from 4 capital cities –
-                Prague, Vienna, Bratislava and Budapest.
-              </p>
-              <p>
-                The second reason which makes Brno a very suitable city to host
-                11th ESBP is the fact that Brno has evolved into an important
-                university city with numerous scientific institutions and
-                research centers and a very strong scientific background and
-                infrastructure. Furthermore, numerous industrial and
-                technological companies active in the field of research and
-                development are located in Brno as well. Actually, Brno
-                resonates with science and technology!
-              </p>
-              <p>
-                Further, Brno has a rich history, a beautiful historical center,
-                hundreds of historical sights and other places which are worth
-                seeing and visiting. Brno is also famous due to its young spirit
-                and numerous excellent restaurants, bars, and pubs.
-              </p>
-              <p>
-                To sum up, we do believe that Brno is an excellent place to
-                organize a scientific congress!
-              </p>
-              <p>
-                For more information about Brno, you can visit the following
-                links:
-                <br />
-                <a href="https://en.brno.cz/ " target="_blank"
-                  >https://en.brno.cz/</a
-                >&emsp;<a
-                  href="https://www.gotobrno.cz/en/
-                            "
-                  target="_blank"
-                  >https://www.gotobrno.cz/en/
-                </a>
-              </p>
-            </div>
-            <div class="venue-image venue-image-1"></div>
-          </div>
-          <div class="venue-inner venue-inner-2 mt-20 mb-30">
-            <div class="venue-image venue-image-2"></div>
-            <div class="venue-text">
-              <h3>Venue</h3>
-              <p>
-                Brno Observatory and Planetarium is not only an exciting place
-                that you should definitely visit if you are interested in the
-                universe, but it is also an ideal and unique venue for the
-                organization of medium size conferences and symposia such as
-                11th ESBP. This fascinating place can provide us with all we
-                need and even more. We will use the digital planetarium as the
-                main conference hall, but also other meeting rooms for parallel
-                sessions or workshops are available. Further, the looby will
-                serve as a place for poster sessions, coffee breaks, and also
-                relaxing or even working area. Brno Observatory and Planetarium
-                is located on the hill and it also grants the visitors
-                fascinating views of Brno City and its surroundings.
-              </p>
-              <p>
-                For more information about the Brno Observatory and Planetarium,
-                you can use the following link:
-                <a href="https://www.hvezdarna.cz/en/about-us/" target="_blank"
-                  >https://www.hvezdarna.cz/en/about-us/
-                </a>
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- Info -->
-        <section id="info" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Information&nbsp;for participants</h2>
-          </div>
-          <div class="info-inner">
-            <div class="info-nav">
+          <div id="infoText" class="info-text">
+            <div class="tab-content tab-1">
+              <h3>About Brno</h3>
+              <h4>Tips for trips:</h4>
               <ul>
-                <li data-list="tab-1" class="active">About Brno</li>
-                <li data-list="tab-2">Accommodation</li>
+                <li>
+                  Špilberk Castle<br />
+                  - It is a castle on the hilltop in Brno, Southern Moravia
+                  built in the first half of the 13th century.
+                </li>
+                <li>
+                  Cathedral of St. Peter and Paul<br />
+                  - It is a national cultural monument and one of the most
+                  important pieces of Baroque architecture in South Moravia.
+                  Possible to climb onto a tower which offers nice view.
+                </li>
+                <li>
+                  Tugendhat Villa (in the UNESCO list)<br />
+                  - The Villa of Greta and Fritz Tugendhat, designed by the
+                  architect Ludwig Mies van der Rohe and built in
+                  1929–1930.<br />Ticket online:
+                  <a href="https://www.tugendhat.eu/en/tour-and-tickets/"
+                    target="_blank">https://www.tugendhat.eu/en/tour-and-tickets/</a>
+                </li>
+              </ul>
+              <h4>Public transport:</h4>
+              <p>
+                You can use contactless cards, or smartphones and smartwatches
+                in the trams/buses. Just get on and tap your card against the
+                yellow reader inside. You’ll be charged for a basic
+                transferable 60-minute ticket (25 CZK). You can take multiple
+                journeys within the allocated time. If you travel longer than
+                60-minutes, or several times in one day, you’ll be charged for
+                another ticket, but never more than 90 CZK per day. Or go
+                through the mobile app Sejf, where you can buy tickets in
+                English.
+              </p>
+              <h4>Emergency Services:</h4>
+              <ul>
+                <li>For police, dial 158</li>
+                <li>For fire, dial 150</li>
+                <li>For ambulance, dial 155</li>
+                <!-- prettier-ignore -->
+                <li>Using mobile phones: do not forget include the local code
+                  before the number, for example: +42 – 158 to call the police
+                  in Brno
+                </li>
+                <li>The European Emergency Number 112 can also be used.</li>
               </ul>
             </div>
-            <div id="infoText" class="info-text">
-              <div class="tab-content tab-1">
-                <h3>About Brno</h3>
-                <h4>Tips for trips:</h4>
+            <div class="tab-content tab-2">
+              <h3>Accommodation</h3>
+              <p>To be specified.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- dates & registration -->
+      <section id="reg" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Importatnt dates&nbsp;&<br />registration</h2>
+        </div>
+        <div class="reg-inner">
+          <h3 style="text-align: center">To be specified and opened</h3>
+        </div>
+      </section>
+      <!-- Sponsoring -->
+      <section id="sponsor" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Sponsoring</h2>
+        </div>
+        <div class="sponsor-inner">
+          <div class="sponsor-grid">
+            <div class="sponsor-item">
+              <div class="sponsor-header">
+                <h2>Platinum sponsor</h2>
+                <img src="/ESBP/src/img/platinum.svg">
+                <h3>4 000 €</h3>
+              </div>
+              <div class="sponsor-text">
                 <ul>
-                  <li>
-                    Špilberk Castle<br />
-                    - It is a castle on the hilltop in Brno, Southern Moravia
-                    built in the first half of the 13th century.
-                  </li>
-                  <li>
-                    Cathedral of St. Peter and Paul<br />
-                    - It is a national cultural monument and one of the most
-                    important pieces of Baroque architecture in South Moravia.
-                    Possible to climb onto a tower which offers nice view.
-                  </li>
-                  <li>
-                    Tugendhat Villa (in the UNESCO list)<br />
-                    - The Villa of Greta and Fritz Tugendhat, designed by the
-                    architect Ludwig Mies van der Rohe and built in
-                    1929–1930.<br />Ticket online:
-                    <a
-                      href="https://www.tugendhat.eu/en/tour-and-tickets/"
-                      target="_blank"
-                      >https://www.tugendhat.eu/en/tour-and-tickets/</a
-                    >
-                  </li>
-                </ul>
-                <h4>Public transport:</h4>
-                <p>
-                  You can use contactless cards, or smartphones and smartwatches
-                  in the trams/buses. Just get on and tap your card against the
-                  yellow reader inside. You’ll be charged for a basic
-                  transferable 60-minute ticket (25 CZK). You can take multiple
-                  journeys within the allocated time. If you travel longer than
-                  60-minutes, or several times in one day, you’ll be charged for
-                  another ticket, but never more than 90 CZK per day. Or go
-                  through the mobile app Sejf, where you can buy tickets in
-                  English.
-                </p>
-                <h4>Emergency Services:</h4>
-                <ul>
-                  <li>For police, dial 158</li>
-                  <li>For fire, dial 150</li>
-                  <li>For ambulance, dial 155</li>
-                  <!-- prettier-ignore -->
-                  <li>Using mobile phones: do not forget include the local code
-                    before the number, for example: +42 – 158 to call the police
-                    in Brno
-                  </li>
-                  <li>The European Emergency Number 112 can also be used.</li>
+                  <li>3 Full access vouchers</li>
+                  <li>Exhibition booth</li>
+                  <li>Oral presentation</li>
+                  <li>Poster presentation</li>
+                  <li>The selected scientific award(s) will be titled according to general sponsor(s)</li>
+                  <li>Logo on printed final program</li>
+                  <li>Logo on event website</li>
+                  <li>Presentation of the videospot of the general sponsor on conference website</li>
+                  <li>Logo on conference materials</li>
+                  <li>Acknowledgement during conference opening and closing</li>
+                  <li>Insert in the delegate bag</li>
+                  <li>2 pages size advertisement in abstract book</li>
+                  <li>Roll-up/banner in the main conference hall</li>
+                  <li>Certificate of appreciation</li>
                 </ul>
               </div>
-              <div class="tab-content tab-2">
-                <h3>Accommodation</h3>
-                <p>To be specified.</p>
+            </div>
+            <div class="sponsor-item">
+              <div class="sponsor-header">
+                <h2>Golden sponsor</h2>
+                <img src="/ESBP/src/img/golden.svg">
+                <h3>2 000 €</h3>
+              </div>
+              <div class="sponsor-text">
+                <ul>
+                  <li>2 Full access vouchers</li>
+                  <li>Exhibition booth</li>
+                  <li>Poster presentation in poster section</li>
+                  <li>Logo on printed final program </li>
+                  <li>Logo on event website</li>
+                  <li>Logo on conference materials</li>
+                  <li>Acknowledgement during conference opening and closing</li>
+                  <li>Insert in the delegate bag</li>
+                  <li>1 page size advertisement in abstract book</li>
+                  <li>Roll-up/banner in the conference venue</li>
+                  <li>Certificate of appreciation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sponsor-item">
+              <div class="sponsor-header">
+                <h2>Silver sponsor</h2>
+                <img src="/ESBP/src/img/silver.svg">
+                <h3>1 000 €</h3>
+              </div>
+              <div class="sponsor-text">
+                <ul>
+                  <li>1 Full access voucher</li>
+                  <li>Exhibition booth</li>
+                  <li>Logo on event website</li>
+                  <li>Logo on conference materials</li>
+                  <li>Acknowledgement during conference opening and closing</li>
+                  <li>Insert in the delegate bag</li>
+                  <li>½ page size advertisement in abstract book</li>
+                  <li>Roll-up/banner in the conference venue</li>
+                  <li>Certificate of appreciation</li>
+                </ul>
               </div>
             </div>
           </div>
-        </section>
-        <!-- dates & registration -->
-        <section id="reg" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Importatnt dates&nbsp;&<br />registration</h2>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="holder about">
+        <div class="holder-header">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-inner">
+          <div class="contact-text">
+            <h3>Contact</h3>
+            <ul>
+              <li>Brno University of Technology</li>
+              <li>Faculty of Chemistry</li>
+              <li>Purkyňova 464/118</li>
+              <li>612 00 Brno, Czech Republic</li>
+            </ul>
+            <ul>
+              <li>Stanislav Obruča</li>
+              <li>obruca@fch.vut.cz</li>
+            </ul>
           </div>
-          <div class="reg-inner">
-            <h3 style="text-align: center">To be specified and opened</h3>
+          <div class="contact-map">
+            <h3>Location</h3>
+            <iframe style="border: none" src="https://en.frame.mapy.cz/s/gokunopove" width="100%" height="100%"
+              frameborder="0"></iframe>
           </div>
-        </section>
-        <!-- Sponsoring -->
-        <section id="sponsor" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Sponsoring</h2>
-          </div>
-          <div class="sponsor-inner">
-            <h3 style="text-align: center">To be announced</h3>
-          </div>
-        </section>
-        <!-- Contact -->
-        <section id="contact" class="holder about">
-          <div class="holder-header">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <h2>Contact</h2>
-          </div>
-          <div class="contact-inner">
-            <div class="contact-text">
-              <h3>Contact</h3>
-              <ul>
-                <li>Brno University of Technology</li>
-                <li>Faculty of Chemistry</li>
-                <li>Purkyňova 464/118</li>
-                <li>612 00 Brno, Czech Republic</li>
-              </ul>
-              <ul>
-                <li>Stanislav Obruča</li>
-                <li>obruca@fch.vut.cz</li>
-              </ul>
-            </div>
-            <div class="contact-map">
-              <h3>Location</h3>
-              <iframe
-                style="border: none"
-                src="https://en.frame.mapy.cz/s/gokunopove"
-                width="100%"
-                height="100%"
-                frameborder="0"
-              ></iframe>
-            </div>
-          </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer>
-        <p>
-          Copyright © FCH VUT 2022 |
-          <a href="https://www.vut.cz/en/cookies" target="_blank"
-            >Cookies Policy</a
-          >
-        </p>
-      </footer>
-    </div>
-    <script
-      type="text/plain"
-      cookie-consent="strictly-necessary"
-      src="index.js"
-    ></script>
-  </body>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>
+        Copyright © FCH VUT 2022 |
+        <a href="https://www.vut.cz/en/cookies" target="_blank">Cookies Policy</a>
+      </p>
+    </footer>
+  </div>
+  <script type="text/plain" cookie-consent="strictly-necessary" src="index.js"></script>
+</body>
+
 </html>
